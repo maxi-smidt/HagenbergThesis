@@ -1,0 +1,130 @@
+%%% Einfaches Template für einen Abschlussbericht zum Berufspraktikum
+
+%%% Magic Comments zum Setzen der korrekten Parameter in kompatiblen IDEs
+% !TeX encoding = utf8
+% !TeX program = pdflatex 
+% !TeX spellcheck = de_DE
+% !BIB program = biber
+
+\RequirePackage[utf8]{inputenc} % bei Verw. von lualatex oder xelatex entfernen!
+\RequirePackage{hgbpdfa}        % Erzeugt ein PDF/A-2b-konformes Dokument
+
+\documentclass[type=internship,theme=fhooe24,language=german,titlelanguage=german,smartquotes]{hgbthesis}
+% Zulässige Optionen in [..]: 
+%    Typ der Arbeit (type=): 'master' (default), 'bachelor', 'diploma', 'phd', 'internship'
+%    Theme der Titelseite (theme=): 'default' (default), 'fhooe24'
+%    Als Exposé verwenden: 'proposal' oder 'proposal=true' 
+%    Hauptsprache im Dokument (language=): 'german' (default), 'english'
+%    Sprache der Titelseite (titlelanguage=): 'german', 'english' (default is main language)
+%    Umwandlung in typografische Anführungszeichen: 'smartquotes'
+%    APA Zitierstil: 'apa'
+%    Layout: 'oneside' (einseitig, default), 'twoside' (zweiseitig)
+%%%-----------------------------------------------------------------------------
+
+\graphicspath{{images/}}  % directory for user images and graphics
+\bibliography{references} % biblatex literature file (references.bib)
+
+%%%-----------------------------------------------------------------------------
+\begin{document}
+%%%-----------------------------------------------------------------------------
+
+%%%-----------------------------------------------------------------------------
+% Angaben für die Titelei (Titelseite, Erklärung etc.)
+%%%-----------------------------------------------------------------------------
+
+\title{Endbericht zum Berufspraktikum bei Mogulovich International}
+%\subtitle{Untertitel nur wenn unbedingt notwendig}
+\author{Alex A.\ Schlaumeier}
+
+\programtype{Fachhochschul-Bachelorstudiengang}
+\programname{Medientechnik und -design}
+\institution{Fachhochschule Oberösterreich}
+
+\placeofstudy{Hagenberg}
+\dateofsubmission{2025}{07}{01} % {JJJJ}{MM}{TT}
+
+% Liste der Kontaktpersonen, bis zu 4 sind möglich, Titel in [] ist optional
+\advisor{Pjotr I.~Czar, M.A.}
+%\advisor[Team Lead]{Bettina B. Ackend}
+
+\companyName{%
+   Mogulovich International Media GmbH\\
+   Online Division\\
+   Hubertusgasse 3a, 1020 Wien
+}
+\companyUrl{www.mogul.at}
+
+\license{cc}      % Unter Creative Commons Lizenz veröffentlichen (empfohlen)
+%\license{strict} % Restriktieve Lizenz, "Alle Rechte vorbehalten"
+
+%%%-----------------------------------------------------------------------------
+\frontmatter                                       % Titelei (röm. Seitenzahlen)
+%%%-----------------------------------------------------------------------------
+
+\maketitle
+\tableofcontents
+
+%%%-----------------------------------------------------------------------------
+
+\chapter{Kurzfassung}
+
+Umfang der Kurzfassung: ca.\ 200 Worte.
+
+Zum allgemeinen Inhalt des Berichts: Dieser Bericht beschreibt den Ablauf des
+Praktikums, die Aufgaben und durchgeführten Projekte und Erfahrungen. Die
+eigenen Aktivitäten (Projekte) stehen dabei natürlich im Mittelpunkt und bilden
+den Hauptteil des Berichts. Wenn viele Kleinprojekte bearbeitet wurden, sollten
+einige davon exemplarisch genauer beschrieben werden. Neben der eigentlichen
+Arbeit sollten aber auch folgende weitere Aspekte berücksichtigt werden:
+%
+\begin{itemize}
+	\item Abläufe (Workflows) innerhalb des Unternehmens bzw.\ in Projekten
+	(grafische Darstellungen können dabei nützlich sein),
+	\item Arbeits- und Führungsstil, Kommunikation innerhalb des Unternehmens,
+	\item Kommunikation nach außen (Kund*innen, Partner*innen),
+	\item Zeitsituation, Terminprobleme,
+	\item Einbettung in das Team, soziale Erfahrungen,
+	\item Einsatz von speziellen Techniken, Methoden und Werkzeugen,
+	\item wichtige Herausforderungen oder Schwierigkeiten,
+	\item Anforderungen in Bezug auf die Ausbildung im Studium (gut
+	einsetzbare Kenntnisse, Defizite).
+\end{itemize}
+%
+Die nachfolgenden Kapitelüberschriften sollen nur zur Orientierung für die
+Struktur des Berichts dienen, über die konkrete Einteilung und den Wortlaut
+kann man natürlich selbst entscheiden.
+
+%%%-----------------------------------------------------------------------------
+\mainmatter                             % Hauptteil (ab hier arab. Seitenzahlen)
+%%%-----------------------------------------------------------------------------
+
+\chapter{Das Unternehmen}
+
+Umfang: 1--2 Seiten
+
+%%%-----------------------------------------------------------------------------
+
+\chapter{Projekte und Tätigkeiten während des Praktikums}
+
+Umfang: 2--3 Seiten (Projektziel(e), Projektumfeld)
+
+%%%-----------------------------------------------------------------------------
+     
+\chapter{Projektbeispiele}
+
+Umfang: 5--6 Seiten (Umsetzung, grober Terminplan, Ergebnisse,
+Qualitätssicherungsmaßnahmen)
+
+%%%-----------------------------------------------------------------------------
+
+\chapter{Erfahrungen und Zusammenfassung}
+
+Umfang: 1--2 Seiten
+
+%%%-----------------------------------------------------------------------------
+%\backmatter        % Schlussteil (nur bei Verwendung des Quellenverzeichnisses)
+%%%-----------------------------------------------------------------------------
+
+%\MakeBibliography % Quellenverzeichnis (sofern notwendig, sonst weglassen)
+
+\end{document}
